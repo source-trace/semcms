@@ -1,0 +1,34 @@
+##### NOTE: Replace /shop/ with the relative web path of your catalog in the "Rewrite Base" line below:
+#Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+#防盗链功能
+#RewriteCond %{HTTP_REFERER} !^http://(.+.)?mysite.com/ [NC]
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteRule .*.(jpe?g|gif|bmp|png)$ /images/nohotlink.jpg [L]
+#重定向
+#Options +FollowSymLinks
+RewriteCond %{http_host} ^yourdomain.com [NC]
+RewriteRule ^(.*)$ http://www.yourdomain.com/$1 [L,R=301]
+# From Ultimate SEO URLs
+#RewriteRule  index.html  index\.php
+RewriteRule  ^product/$  product\.php
+RewriteRule  ^product/([0-9,a-z,A-Z,\s,-]*)/$  product\.php?ID=$1
+RewriteRule  ^product/([0-9,a-z,A-Z,\s,-]*)_([\d]*)/$  product\.php?ID=$1&page=$2
+RewriteRule  ^([0-9,a-z,A-Z,-]*)\.html$  view\.php?ID=$1
+RewriteRule  ^about/([0-9,a-z,A-Z,-]*).html$  about\.php?ID=$1
+RewriteRule  ^contact/$  contact.php
+
+RewriteRule  ^news/$ news\.php
+RewriteRule  ^news_([\d]*)/$ news\.php?page=$1
+RewriteRule  ^news/([0-9,a-z,A-Z,-]*)/$ news\.php?ID=$1
+RewriteRule  ^news/([0-9,a-z,A-Z,-]*)_([\d]*)/$ news\.php?ID=$1&page=$2
+RewriteRule  ^news/([0-9,a-z,A-Z,-]*)\.html$ info\.php?ID=$1
+#RewriteRule  search.php  Templete/Num_1/Include/Search\.php
+#Page_not_found
+ErrorDocument 404 /Error.html
+
+
+
+ 
