@@ -9,12 +9,34 @@
    
 */
 @font-face {
-  font-family: 'Georgia';
-  src: url('fonts/Georgia.ttf');
-  font-style: normal;
+    font-family: 'AvenirNext';
+    src: url("fonts/AvenirNext.woff2") format("woff2"),
+    url("fonts/AvenirNext.woff") format("woff"),
+    url("fonts/AvenirNext.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url("fonts/AvenirNext-DemiBold.woff2") format("woff2"),
+    url("fonts/AvenirNext-DemiBold.woff") format("woff"),
+    url("fonts/AvenirNext-DemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url("fonts/AvenirNext-Bold.woff2") format("woff2"),
+    url("fonts/AvenirNext-Bold.woff") format("woff"),
+    url("fonts/AvenirNext-Bold.ttf") format("truetype"),
+    url("fonts/AvenirNext-Bold.svg#AvenirNext-Bold") format("svg");
+    font-weight: 100;
+    font-style: normal
 }
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,iv,tr,dd,dt{margin:0; padding:0;}
-body {font-family: Georgia;font-size:0.75em; }
+body {font-family: AvenirNext;font-size:0.75em; }
 ul,li{list-style:none;}
 .spr{ float:right; margin-right:10px;}
 a{text-decoration:none;color:#333;}

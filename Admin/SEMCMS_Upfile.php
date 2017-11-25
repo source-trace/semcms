@@ -4,25 +4,11 @@
 <?php
 
 //文件上传方式
- 
+ $uptype = explode(".",$_FILES["file"]["name"]);//获取扩展名
+ //
 //验证文件类型号
-if (/*(($_FILES["file"]["type"] == "image/gif")//gif
-|| ($_FILES["file"]["type"] == "image/jpeg")//jpg
-|| ($_FILES["file"]["type"] == "image/pjpeg")//jpg
-|| ($_FILES["file"]["type"] == "image/x-png")//png
-|| ($_FILES["file"]["type"] == "image/png")//png
-|| ($_FILES["file"]["type"] == "image/bmp")//bmp  
-|| ($_FILES["file"]["type"] == "application/vnd.ms-excel")//xls
-|| ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")//xlsx
-|| ($_FILES["file"]["type"] == "application/msword")//doc
-|| ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")//docx
-|| ($_FILES["file"]["type"] == "application/zip")//zip
-|| ($_FILES["file"]["type"] == "application/octet-stream")//rar
-|| ($_FILES["file"]["type"] == "application/x-rar-compressed")//rar 
-|| ($_FILES["file"]["type"] == "application/x-zip-compressed")//zip
-|| ($_FILES["file"]["type"] == "image/x-icon")//ico
- 
- )&&*/ ($_FILES["file"]["size"] > 1) && ($_FILES["file"]["size"] < 30240000))
+$kuozm=strtolower(end($uptype));
+if (preg_match('/jpe|gif|png|doc|xls|pdf|rar|zip|bmp|ico/i',$kuozm) && ($_FILES["file"]["size"] > 1) && ($_FILES["file"]["size"] < 30240000))
   {
   if ($_FILES["file"]["error"] > 0)
     {
@@ -43,7 +29,7 @@ if (/*(($_FILES["file"]["type"] == "image/gif")//gif
      
       //文件重命名
       
-      $uptype = explode(".",$_FILES["file"]["name"]);//获取扩展名
+      
       
       if (test_input($_POST["wname"])!==""){//自定义文件名
           

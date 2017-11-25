@@ -16,8 +16,7 @@
 	 //$weburldir="/test/"
          //如果有端口号请加上端口，如下
          //$weburldir=":90/test/"
-	//$weburldir="/"; 
-  $weburldir="/";
+   $weburldir="/";
    $web_url="http://".$SERVER_NAME.$weburldir;  
        
    // 固定参数
@@ -51,7 +50,7 @@
       $webTemplate=$row['web_Template'];//模版标志
       $web_url_ger="";
       //以下内容请勿乱修改：
-      $CopyRight="<span class='spr'>".Chr(32).chr(80).chr(111).chr(119).chr(101).chr(114).chr(101).chr(100).chr(32).chr(98).chr(121).chr(32).chr(60).chr(97).chr(32).chr(104).chr(114).chr(101).chr(102).chr(61).chr(34).chr(104).chr(116).chr(116).chr(112).chr(58).chr(47).chr(47).chr(119).chr(119).chr(119).chr(46).chr(115).chr(101).chr(109).chr(45).chr(99).chr(109).chr(115).chr(46).chr(99).chr(111).chr(109).chr(34).chr(62).chr(60).chr(98).chr(32).chr(115).chr(116).chr(121).chr(108).chr(101).chr(61).chr(34).chr(99).chr(111).chr(108).chr(111).chr(114).chr(58).chr(35).Chr(70).Chr(54).chr(48).chr(34).chr(62).chr(115).chr(101).chr(109).chr(99).chr(109).chr(115).chr(32).chr(80).chr(72).chr(80).chr(32).Chr(50).chr(46).Chr(51).chr(60).chr(47).chr(98).chr(62).chr(60).chr(47).chr(97).chr(62).chr(32)."</span>";
+      $CopyRight="<span class='spr'>".Chr(32).chr(80).chr(111).chr(119).chr(101).chr(114).chr(101).chr(100).chr(32).chr(98).chr(121).chr(32).chr(60).chr(97).chr(32).chr(104).chr(114).chr(101).chr(102).chr(61).chr(34).chr(104).chr(116).chr(116).chr(112).chr(58).chr(47).chr(47).chr(119).chr(119).chr(119).chr(46).chr(115).chr(101).chr(109).chr(45).chr(99).chr(109).chr(115).chr(46).chr(99).chr(111).chr(109).chr(34).chr(62).chr(60).chr(98).chr(32).chr(115).chr(116).chr(121).chr(108).chr(101).chr(61).chr(34).chr(99).chr(111).chr(108).chr(111).chr(114).chr(58).chr(35).Chr(70).Chr(54).chr(48).chr(34).chr(62).chr(115).chr(101).chr(109).chr(99).chr(109).chr(115).chr(32).chr(80).chr(72).chr(80).chr(32).Chr(50).chr(46).Chr(52).chr(60).chr(47).chr(98).chr(62).chr(60).chr(47).chr(97).chr(62).chr(32)."</span>";
    } 
 
  

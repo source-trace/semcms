@@ -6,5 +6,6 @@
  * and open the template in the editor.
  */
 include_once  'db_conn.php';
+include_once  'web_sql.php';
 include_once  'web_config.php';
 include_once  'general_function.php';

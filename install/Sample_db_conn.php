@@ -17,6 +17,6 @@ if(!$con){
  if(!mysql_select_db($dbdata, $con)){
  	die("数据库名称不对,请检查是否正确安装数据库!".mysql_error());
  	
- 	};//选择数据库
+ 	}//选择数据库
 
  

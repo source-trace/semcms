@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: 2017-10-24 12:30:20
+-- Generation Time: 2017-11-23 10:54:05
 -- 服务器版本： 5.6.35
--- PHP Version: 5.6.30
+-- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `semtest`
+-- Database: `2017test`
 --
 
 -- --------------------------------------------------------
@@ -144,7 +144,7 @@ CREATE TABLE `sc_config` (
 --
 
 INSERT INTO `sc_config` (`ID`, `web_name`, `web_url`, `web_logo`, `web_ico`, `web_copy`, `web_email`, `web_skype`, `web_wathsapp`, `web_tel`, `web_plist`, `web_nlist`, `web_inlist`, `web_iflist`, `web_meate`, `web_google`, `web_share`, `web_umail`, `web_pmail`, `web_dmail`, `web_smail`, `web_tmail`, `web_jmail`, `web_mailopen`, `web_Template`, `web_time`) VALUES
-(1, 'semcms12', 'http://127.0.0.1/', '../Images/default/logo.png', '../Images/default/favicon.ico', 'CopyRight 2017 semcms', 'service@sem-cms.com', 'semcms', '13819471654', '+86（0576）88880000', 100, 12, 8, 8, '', '', '<li><a href=\"\">Facebook</a></li>\r\n<li><a href=\"\">Twitter</a></li>\r\n<li><a href=\"\">Google +</a></li>\r\n<li><a href=\"\">YouTube </a></li>', 'service@sem-cms.com', '111111122222222222', '465', 'smtp.qq.com', 'service@sem-cms.com', 'test@qq.com', 0, 'default', '2017-10-24 00:26:06');
+(1, 'semcms12', 'http://127.0.0.1/', '../Images/default/logo.png', '../Images/default/favicon.ico', 'CopyRight 2017 semcms', 'service@sem-cms.com', 'semcms', '138000000', '+86（0571）88880000', 100, 12, 8, 8, '', '', '<li><a href=\"\">Facebook</a></li>\r\n<li><a href=\"\">Twitter</a></li>\r\n<li><a href=\"\">Google +</a></li>\r\n<li><a href=\"\">YouTube </a></li>', 'service@sem-cms.com', '111111122222222222', '465', 'smtp.qq.com', 'service@sem-cms.com', 'test@qq.com', 0, 'default', '2017-11-22 22:42:11');
 
 -- --------------------------------------------------------
 
@@ -392,8 +392,9 @@ INSERT INTO `sc_menu` (`ID`, `menu_name`, `menu_link`, `menu_xiala`, `languageID
 (1, 'HOME', '/', 0, 1, 1, '2017-02-16 18:25:05'),
 (3, 'PRODUCTS', 'product.php', 0, 1, 2, '2017-02-16 18:25:20'),
 (4, 'ABOUT US', 'about.php?ID=1', 0, 1, 3, '2017-02-16 18:25:27'),
-(6, 'NEWS', 'news.php', 0, 1, 998, '2017-02-16 18:25:33'),
-(7, 'CONTACT US', 'contact.php', 0, 1, 10000, '2017-02-16 18:25:52');
+(6, 'NEWS', 'news.php', 0, 1, 3, '2017-11-22 22:41:25'),
+(7, 'CONTACT US', 'contact.php', 0, 1, 6, '2017-11-22 22:41:19'),
+(8, 'DOWNLOAD', 'download.php', 0, 1, 4, '2017-11-22 22:41:40');
 
 -- --------------------------------------------------------
 
@@ -689,7 +690,7 @@ ALTER TABLE `sc_link`
 -- 使用表AUTO_INCREMENT `sc_menu`
 --
 ALTER TABLE `sc_menu`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- 使用表AUTO_INCREMENT `sc_msg`
 --
